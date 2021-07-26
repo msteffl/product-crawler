@@ -24,6 +24,8 @@ const scraperObject = {
       await getAllProductsFromCategory(category.url, this.results, this.output, category.name);
     }
 
+    console.log('DONE !')
+
     async function getAllProductsFromCategory(url, results, output, category) {
       const pageLinks = await getPageUrls(url);
 
